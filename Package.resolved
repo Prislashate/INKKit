@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "2777659076fda38bd4e487739ee331c7a65b5924",
+          "version": "5.2.1"
+        }
+      },
+      {
+        "package": "HandyJSON",
+        "repositoryURL": "https://github.com/alibaba/HandyJSON.git",
+        "state": {
+          "branch": null,
+          "revision": "dcf39cf062680ffa4fd0acb7f9117a97755c113f",
+          "version": "5.0.2"
+        }
+      },
+      {
+        "package": "swift-numerics",
+        "repositoryURL": "https://github.com/apple/swift-numerics.git",
+        "state": {
+          "branch": null,
+          "revision": "5dfc460876510988560170cee3702ab01b89587a",
+          "version": "0.0.5"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
