@@ -11,7 +11,7 @@ let package = Package(
         .library(
             name: "INKKit",
             type: .dynamic,
-            targets: ["Core", "Other"]),
+            targets: ["INKKit", "INKAKit", "INKBKit"]),
     ],
     dependencies: [
         .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.2.0")),
@@ -24,18 +24,21 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
-            name: "Core",
+            name: "INKKit",
             dependencies: [
                 "Alamofire",
                 "HandyJSON",
         ]),
-        .target(name: "Other", dependencies: [
-            "Core",
+        .target(name: "INKAKit", dependencies: [
+            "INKKit",
             .product(name: "Numerics", package: "swift-numerics"),
+        ]),
+        .target(name: "INKBKit", dependencies: [
+            "INKKit",
         ]),
         .testTarget(
             name: "INKKitTests",
-            dependencies: ["Core"]),
+            dependencies: ["INKKit"]),
     ],
     swiftLanguageVersions: [.v5],
     cLanguageStandard: .c11,

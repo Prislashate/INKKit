@@ -1,5 +1,5 @@
 import Foundation
-import Core
+import INKKit
 
 
 public struct INKAnimal {
@@ -9,5 +9,6 @@ public struct INKAnimal {
     
     public func test() {
         let p = INKPerson()
+        print(p)
     }
 }

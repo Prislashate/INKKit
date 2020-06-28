@@ -1,5 +1,5 @@
 import XCTest
-@testable import Core
+@testable import INKKit
 
 final class INKKitTests: XCTestCase {
     func testExample() {
