@@ -15,6 +15,7 @@ let package = Package(
             targets: ["INKKit", "INKAKit", "INKBKit"]),
     ],
     dependencies: [
+        .package(path: "../INKCrashKit"),
         .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.2.0")),
         .package(url: "https://github.com/alibaba/HandyJSON.git", .upToNextMajor(from: "5.0.2")),
         .package(url: "https://github.com/apple/swift-standard-library-preview.git", .branch("master")),
@@ -34,6 +35,7 @@ let package = Package(
             dependencies: [
                 "Alamofire",
                 "HandyJSON",
+                "INKCrashKit",
         ]),
         .target(name: "INKAKit", dependencies: [
             "INKKit",
