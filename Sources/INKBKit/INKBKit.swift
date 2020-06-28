@@ -9,5 +9,6 @@ public struct INKAnimal {
     
     public func test() {
         let p = INKPerson()
+        print(p)
     }
 }

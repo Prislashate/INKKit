@@ -11,7 +11,7 @@ let package = Package(
         .executable(name: "tool", targets: ["tool"]),
         .library(
             name: "INKKit",
-            type: .dynamic,
+            type: .static,
             targets: ["INKKit", "INKAKit", "INKBKit"]),
     ],
     dependencies: [
@@ -28,6 +28,7 @@ let package = Package(
         .target(
             name: "tool",
             dependencies: [
+                "INKKit",
                 .product(name: "Numerics", package: "swift-numerics"),
         ]),
         .target(
@@ -36,13 +37,28 @@ let package = Package(
                 "Alamofire",
                 "HandyJSON",
                 "INKCrashKit",
-        ]),
+            ],
+            path: nil,
+            exclude: [],
+            sources: nil,
+            publicHeadersPath: nil,
+            cSettings: nil,
+            cxxSettings: nil,
+            swiftSettings: [
+                .define("ENABLE_SOMETHING"),
+            ],
+            linkerSettings: nil),
         .target(name: "INKAKit", dependencies: [
             "INKKit",
         ]),
         .target(name: "INKBKit", dependencies: [
             "INKKit",
         ]),
+        .systemLibrary(
+            name: "INKSystem",
+            path: nil,
+            pkgConfig: nil,
+            providers: nil),
         .testTarget(
             name: "INKKitTests",
             dependencies: ["INKKit"]),

@@ -7,7 +7,12 @@ public struct INKPerson {
     
     public init() {}
     
-    public func test() {
+    public static func test() {
+        #if ENABLE_SOMETHING
+        print("Define ENABLE_SOMETHING in INKKit.")
+        #else
+        print("No define ENABLE_SOMETHING in INKKit.")
+        #endif
     }
 }
 
