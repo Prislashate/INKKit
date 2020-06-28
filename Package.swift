@@ -11,7 +11,7 @@ let package = Package(
         .executable(name: "tool", targets: ["tool"]),
         .library(
             name: "INKKit",
-            type: .static,
+            type: .dynamic,
             targets: ["INKKit", "INKAKit", "INKBKit"]),
     ],
     dependencies: [
