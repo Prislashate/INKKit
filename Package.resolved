@@ -20,12 +20,39 @@
         }
       },
       {
+        "package": "swift-argument-parser",
+        "repositoryURL": "https://github.com/apple/swift-argument-parser.git",
+        "state": {
+          "branch": "master",
+          "revision": "eb51f949cdd0c9d88abba9ce79d37eb7ea1231d0",
+          "version": null
+        }
+      },
+      {
         "package": "swift-numerics",
         "repositoryURL": "https://github.com/apple/swift-numerics.git",
         "state": {
           "branch": null,
           "revision": "5dfc460876510988560170cee3702ab01b89587a",
           "version": "0.0.5"
+        }
+      },
+      {
+        "package": "swift-se0270-range-set",
+        "repositoryURL": "https://github.com/apple/swift-se0270-range-set",
+        "state": {
+          "branch": null,
+          "revision": "120fc7efe17b11f7eedd94e7a5e1885fc69efb49",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "package": "swift-standard-library-preview",
+        "repositoryURL": "https://github.com/apple/swift-standard-library-preview.git",
+        "state": {
+          "branch": "master",
+          "revision": "6d798ec5aab9c30c095add7fab99bc1d2df84428",
+          "version": null
         }
       }
     ]

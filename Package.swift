@@ -16,6 +16,8 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.2.0")),
         .package(url: "https://github.com/alibaba/HandyJSON.git", .upToNextMajor(from: "5.0.2")),
+        .package(url: "https://github.com/apple/swift-standard-library-preview.git", .branch("master")),
+        .package(url: "https://github.com/apple/swift-argument-parser.git", .branch("master")),
         .package(url: "https://github.com/apple/swift-numerics.git", from: "0.0.5")
     ],
     targets: [
